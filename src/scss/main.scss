@@ -1,0 +1,83 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #901616;
+}
+
+
+
+
+/* 2. Content ================================= */
+
+.content {
+	position: relative;
+	
+	
+	.full-screen-section {
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		min-height: 500px;
+		background: #eeeeee;
+
+		&:nth-child(odd) {
+			background: white;
+		}
+
+		.triangle {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 100vh;
+			height: 100vh;
+			border: 1px solid red;
+			overflow: hidden;
+
+			.background{
+				position: absolute;
+				left: 100%;
+				top: 0;
+				width: 150%;
+				height: 150%;
+				transform-origin: top left;
+				transform: rotate(45deg);
+				background-color: black;
+				// border-style: solid;
+				// border-width: 0 0 500px 500px;
+				// border-color: transparent transparent #000000 transparent;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
