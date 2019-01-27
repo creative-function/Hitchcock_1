@@ -47,7 +47,7 @@ body {
 			background: white;
 		}
 
-		.triangle {
+		.container{
 			position: absolute;
 			right: 0;
 			bottom: 0;
@@ -56,7 +56,7 @@ body {
 			border: 1px solid red;
 			overflow: hidden;
 
-			.background{
+			.triangle {
 				position: absolute;
 				left: 100%;
 				top: 0;
@@ -65,17 +65,178 @@ body {
 				transform-origin: top left;
 				transform: rotate(45deg);
 				background-color: black;
+				
 				// border-style: solid;
 				// border-width: 0 0 500px 500px;
 				// border-color: transparent transparent #000000 transparent;
 			}
 		}
+
+		.container-left{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100vh;
+			height: 100vh;
+			border: 1px solid red;
+			
+			.triangle-left{
+				position: absolute;
+				left: 0%;
+				top: 0;
+				width: 150%;
+				height: 150%;
+				transform-origin: top left;
+				transform: rotate(45deg);
+				background-color: black;
+				display: none;
+				// border-style: solid;
+				// border-width: 0 0 500px 500px;
+				// border-color: transparent transparent #000000 transparent;
+			}
+		}
+	
+		img.birdGym{
+			position: absolute;
+			bottom:0;
+			left:0;
+			width: 50%;
+			height: 70%;
+		}
+
+		img.flyBird{
+			position: absolute;
+			top:0;
+			right:0px;
+			animation: fade-slide 6.5s;
+			opacity: 0;
+		}
+
+		img.birdRight{
+			position: absolute;
+			bottom:420px;
+			left:750px;
+			opacity: 0;
+			animation: fade-in 3s;
+			animation-delay:4.2s;
+			animation-fill-mode: forwards;
+		}
+
 	}
 }
 
 
 
+@keyframes fade-slide {
 
+	0%{
+		opacity: 0;
+	}
+
+	25%{
+		opacity: 1;
+	
+
+	}
+
+	40%{
+		opacity: .7;
+		transform: rotate(10deg);
+		transform: translateX(-1000px) translateY(350px) rotate(90deg);
+
+		
+	}
+
+	50{
+		opacity: 1;
+	}
+
+	90%{
+		
+		transform: translateX(-1000px) translateY(360px) rotate(90deg);
+
+	}
+	82%{
+		opacity: 1;
+	}
+
+	83%{
+		opacity: .7;
+	}
+
+	84%{
+		opacity: 1;
+	}
+
+	85%{
+		opacity: .7;
+	}
+
+	88%{
+		opacity: 1;
+	}
+
+
+	89%{
+		opacity: .5;
+	}
+
+	90%{
+		opacity: .7;
+	}
+
+	91%{
+		opacity: .5;
+	}
+
+	92%{
+		opacity: .7;
+	}
+
+	93%{
+		opacity: 1;
+	}
+
+	94%{
+		opacity: .5;
+	}
+
+	99%{
+		opacity: .5;
+		text-transform: rotate(90deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(-1000px) translateY(370px) rotate(90deg);
+		// transform: translateX(-1000px) translateY(700px);
+	}
+
+}
+
+
+@keyframes fade-in {
+	0%{
+		opacity: 0;	
+		transform: rotate(-10deg);
+
+	}
+
+	50%{
+		opacity: 0;	
+		
+	}
+
+	80%{
+		opacity: .4;
+		transform: rotate(10deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform:rotate(0deg);
+	}
+}
 
 
 

@@ -94,7 +94,7 @@ body {
   background: white;
 }
 
-.content .full-screen-section .triangle {
+.content .full-screen-section .container {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -104,7 +104,7 @@ body {
   overflow: hidden;
 }
 
-.content .full-screen-section .triangle .background {
+.content .full-screen-section .container .triangle {
   position: absolute;
   left: 100%;
   top: 0;
@@ -117,6 +117,233 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: black;
+}
+
+.content .full-screen-section .container-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vh;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.content .full-screen-section .container-left .triangle-left {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 150%;
+  height: 150%;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: black;
+  display: none;
+}
+
+.content .full-screen-section img.birdGym {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 70%;
+}
+
+.content .full-screen-section img.flyBird {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  -webkit-animation: fade-slide 6.5s;
+  animation: fade-slide 6.5s;
+  opacity: 0;
+}
+
+.content .full-screen-section img.birdRight {
+  position: absolute;
+  bottom: 420px;
+  left: 750px;
+  opacity: 0;
+  -webkit-animation: fade-in 3s;
+  animation: fade-in 3s;
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade-slide {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: .7;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -webkit-transform: translateX(-1000px) translateY(350px) rotate(90deg);
+    transform: translateX(-1000px) translateY(350px) rotate(90deg);
+  }
+  50 {
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateX(-1000px) translateY(360px) rotate(90deg);
+    transform: translateX(-1000px) translateY(360px) rotate(90deg);
+  }
+  82% {
+    opacity: 1;
+  }
+  83% {
+    opacity: .7;
+  }
+  84% {
+    opacity: 1;
+  }
+  85% {
+    opacity: .7;
+  }
+  88% {
+    opacity: 1;
+  }
+  89% {
+    opacity: .5;
+  }
+  90% {
+    opacity: .7;
+  }
+  91% {
+    opacity: .5;
+  }
+  92% {
+    opacity: .7;
+  }
+  93% {
+    opacity: 1;
+  }
+  94% {
+    opacity: .5;
+  }
+  99% {
+    opacity: .5;
+    text-transform: rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-1000px) translateY(370px) rotate(90deg);
+    transform: translateX(-1000px) translateY(370px) rotate(90deg);
+  }
+}
+
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: .7;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -webkit-transform: translateX(-1000px) translateY(350px) rotate(90deg);
+    transform: translateX(-1000px) translateY(350px) rotate(90deg);
+  }
+  50 {
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateX(-1000px) translateY(360px) rotate(90deg);
+    transform: translateX(-1000px) translateY(360px) rotate(90deg);
+  }
+  82% {
+    opacity: 1;
+  }
+  83% {
+    opacity: .7;
+  }
+  84% {
+    opacity: 1;
+  }
+  85% {
+    opacity: .7;
+  }
+  88% {
+    opacity: 1;
+  }
+  89% {
+    opacity: .5;
+  }
+  90% {
+    opacity: .7;
+  }
+  91% {
+    opacity: .5;
+  }
+  92% {
+    opacity: .7;
+  }
+  93% {
+    opacity: 1;
+  }
+  94% {
+    opacity: .5;
+  }
+  99% {
+    opacity: .5;
+    text-transform: rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(-1000px) translateY(370px) rotate(90deg);
+    transform: translateX(-1000px) translateY(370px) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: .4;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: .4;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
